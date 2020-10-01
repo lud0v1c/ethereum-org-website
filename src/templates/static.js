@@ -6,7 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import { Twemoji } from "react-emoji-render"
 
-import Button from "../components/Button"
+import ButtonLink from "../components/ButtonLink"
 import Breadcrumbs from "../components/Breadcrumbs"
 import Card from "../components/Card"
 import Contributors from "../components/Contributors"
@@ -202,7 +202,7 @@ const components = {
   RandomAppList,
   Roadmap,
   Logo,
-  Button,
+  ButtonLink,
   Contributors,
   InfoBanner,
   Warning,

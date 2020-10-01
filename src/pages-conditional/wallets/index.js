@@ -9,7 +9,7 @@ import { getDefaultMessage } from "../../utils/translations"
 import Callout from "../../components/Callout"
 import Card from "../../components/Card"
 import Link from "../../components/Link"
-import Button from "../../components/Button"
+import ButtonLink from "../../components/ButtonLink"
 import PageMetadata from "../../components/PageMetadata"
 import HorizontalCard from "../../components/HorizontalCard"
 import CardList from "../../components/CardList"
@@ -385,9 +385,9 @@ const WalletsPage = ({ data }) => {
             <Translation id="page-wallets-subtitle-2" />
           </SubtitleTwo>
 
-          <Button to="/wallets/find-wallet/">
+          <ButtonLink to="/wallets/find-wallet/">
             <Translation id="page-wallets-find-wallet-link" />
-          </Button>
+          </ButtonLink>
 
           <StyledDivider />
           <p>
@@ -548,9 +548,9 @@ const WalletsPage = ({ data }) => {
             <SubtitleThree>
               <Translation id="page-wallet-features-desc" />
             </SubtitleThree>
-            <Button to="/wallets/find-wallet/">
+            <ButtonLink to="/wallets/find-wallet/">
               <Translation id="page-wallet-find-wallet-btn" />
-            </Button>
+            </ButtonLink>
             <FindWallet fluid={data.findWallet.childImageSharp.fluid} alt="" />
           </CentralColumn>
         </Content>
@@ -668,9 +668,9 @@ const WalletsPage = ({ data }) => {
             })}
           >
             <div>
-              <Button to="/get-eth/">
+              <ButtonLink to="/get-eth/">
                 <Translation id="page-wallet-get-some-btn" />
-              </Button>
+              </ButtonLink>
             </div>
           </StyledCallout>
           <StyledCallout
@@ -689,9 +689,9 @@ const WalletsPage = ({ data }) => {
             })}
           >
             <div>
-              <Button to="/dapps/">
+              <ButtonLink to="/dapps/">
                 <Translation id="page-wallet-more-on-dapps-btn" />
-              </Button>
+              </ButtonLink>
             </div>
           </StyledCallout>
         </CalloutCardContainer>

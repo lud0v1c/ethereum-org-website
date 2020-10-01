@@ -5,7 +5,7 @@ import { useIntl } from "gatsby-plugin-intl"
 
 import PageMetadata from "../../components/PageMetadata"
 import Translation from "../../components/Translation"
-import Button from "../../components/Button"
+import ButtonLink from "../../components/ButtonLink"
 import { Mixins } from "../../components/Theme"
 import ProductCard from "../../components/ProductCard"
 import { Content, EdnPage } from "../../components/SharedStyledComponents"
@@ -229,7 +229,7 @@ const LearningToolsPage = ({ data }) => {
           you need."
         >
           <div>
-            <Button to="/en/developers/docs/">Browse docs</Button>
+            <ButtonLink to="/en/developers/docs/">Browse docs</ButtonLink>
           </div>
         </CalloutBanner>
       </Content>

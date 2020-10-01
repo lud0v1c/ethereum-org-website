@@ -6,7 +6,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 import styled from "styled-components"
 import { Twemoji } from "react-emoji-render"
 
-import Button from "../components/Button"
+import ButtonLink from "../components/ButtonLink"
 import Card from "../components/Card"
 import Codeblock from "../components/Codeblock"
 import TutorialMetadata from "../components/TutorialMetadata"
@@ -215,7 +215,7 @@ const components = {
   p: P,
   pre: Codeblock,
   table: MarkdownTable,
-  Button,
+  ButtonLink,
   InfoBanner,
   Warning,
   Card,

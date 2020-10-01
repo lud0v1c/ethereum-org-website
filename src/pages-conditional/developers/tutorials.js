@@ -5,7 +5,7 @@ import { useIntl } from "gatsby-plugin-intl"
 import { Twemoji } from "react-emoji-render"
 
 import Icon from "../../components/Icon"
-import Button from "../../components/Button"
+import ButtonLink from "../../components/ButtonLink"
 import Link from "../../components/Link"
 import Modal from "../../components/Modal"
 import PageMetadata from "../../components/PageMetadata"
@@ -153,7 +153,7 @@ const ResultsContainer = styled.div`
   padding: 3rem;
 `
 
-const GithubButton = styled(Button)`
+const GithubButton = styled(ButtonLink)`
   display: flex;
   align-items: center;
   justify-content: center;
