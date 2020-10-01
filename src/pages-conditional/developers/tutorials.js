@@ -14,7 +14,7 @@ import Tag from "../../components/Tag"
 import TutorialTags from "../../components/TutorialTags"
 import {
   EdnPage,
-  FakeButtonSecondary,
+  ButtonSecondary,
 } from "../../components/SharedStyledComponents"
 
 import { getLocaleTimestamp } from "../../utils/time"
@@ -303,9 +303,9 @@ const TutorialsPage = ({ data }) => {
           </ModalOption>
         </ModalBody>
       </Modal>
-      <FakeButtonSecondary onClick={() => setModalOpen(true)}>
+      <ButtonSecondary onClick={() => setModalOpen(true)}>
         Submit a tutorial
-      </FakeButtonSecondary>
+      </ButtonSecondary>
       <TutorialContainer>
         <TagsContainer>
           <TagContainer>

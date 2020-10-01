@@ -4,9 +4,9 @@ import Highlight, { defaultProps } from "prism-react-renderer"
 import { Twemoji } from "react-emoji-render"
 
 import CopyToClipboard from "./CopyToClipboard"
-import { FakeButton } from "./SharedStyledComponents"
+import { Button } from "./SharedStyledComponents"
 
-const CopyCode = styled(FakeButton)`
+const CopyCode = styled(Button)`
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   background-color: ${(props) => props.theme.colors.primary};
