@@ -6,7 +6,7 @@ import { Twemoji } from "react-emoji-render"
 import CopyToClipboard from "./CopyToClipboard"
 import { Button } from "./SharedStyledComponents"
 
-const CopyCode = styled(Button)`
+const CopyButton = styled(Button)`
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   background-color: ${(props) => props.theme.colors.primary};
@@ -20,7 +20,7 @@ const CopyCode = styled(Button)`
   }
 `
 
-const CopyCodeContainer = styled.div`
+const CopyButtonContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -72,10 +72,10 @@ const Codeblock = (props) => {
               </Line>
             ))}
             {shouldShowCopyWidget && (
-              <CopyCodeContainer>
+              <CopyButtonContainer>
                 <CopyToClipboard text={props.children.props.children}>
                   {(isCopied) => (
-                    <CopyCode>
+                    <CopyButton>
                       {!isCopied ? (
                         <div>
                           <Twemoji svg text=":clipboard:" /> Copy
@@ -85,10 +85,10 @@ const Codeblock = (props) => {
                           <Twemoji svg text=":white_check_mark:" /> Copied
                         </div>
                       )}
-                    </CopyCode>
+                    </CopyButton>
                   )}
                 </CopyToClipboard>
-              </CopyCodeContainer>
+              </CopyButtonContainer>
             )}
           </pre>
         )}
